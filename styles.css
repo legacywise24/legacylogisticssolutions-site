@@ -41,3 +41,5 @@
 body.advisors-page .subhero::before{display:block!important;background-image:url("/assets/approved-legacy-wise-logo.png");background-size:contain;background-repeat:no-repeat;background-position:center;width:min(230px,56vw);aspect-ratio:1/1;margin:0 auto 24px}
 /* On phones, show full subsidiary names in a two-column, wrapping directory rather than a clipped horizontal strip. */
 @media(max-width:760px){.quicknav{overflow:visible;position:relative}.quicknav .navlinks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;min-width:0;gap:5px 12px;padding:12px 18px}.quicknav .navlinks a{white-space:normal;max-width:none;overflow-wrap:anywhere;font-size:13px;padding:9px 4px;border-bottom:1px solid #e5eaf0}.lw-assistant{right:12px;bottom:82px}.lw-launch{padding:10px 12px;font-size:12px}}
+/* Standalone .us header: the masthead is a header.hero, so it inherits the parent-company logo above it; hide it — the Logistics logo is in the masthead itself. */
+header.hero::before{display:none!important}
