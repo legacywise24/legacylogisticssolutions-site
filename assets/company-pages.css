@@ -1,0 +1,11 @@
+/* Scoped to these pages; preserve the existing global design. */
+.muse-company .hero::before{display:none}
+.muse-company .company-logo{display:block;width:min(240px,65vw);height:auto;margin:0 0 24px;background:#fff;border-radius:8px}
+.muse-company .hero .wrap{position:relative}
+.muse-company .card ul{padding-left:22px}
+.muse-company .card li{margin-bottom:8px}
+.muse-company .panel{margin-top:28px}
+.muse-company .service-actions{margin-top:18px}
+.muse-company .form-link{display:inline-block;padding:12px 18px;background:#0f315a;color:#fff;border-radius:8px;text-decoration:none;font-weight:700}
+.muse-company .quote-note{font-size:1rem;line-height:1.6}
+@media(max-width:700px){.muse-company .grid.services{grid-template-columns:1fr}.muse-company .hero h1{font-size:2.2rem}.muse-company .navlinks{flex-wrap:wrap}.muse-company .btn{white-space:normal}}
