@@ -43,3 +43,17 @@ body.advisors-page .subhero::before{display:block!important;background-image:url
 @media(max-width:760px){.quicknav{overflow:visible;position:relative}.quicknav .navlinks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;min-width:0;gap:5px 12px;padding:12px 18px}.quicknav .navlinks a{white-space:normal;max-width:none;overflow-wrap:anywhere;font-size:13px;padding:9px 4px;border-bottom:1px solid #e5eaf0}.lw-assistant{right:12px;bottom:82px}.lw-launch{padding:10px 12px;font-size:12px}}
 /* Standalone .us header: the masthead is a header.hero, so it inherits the parent-company logo above it; hide it — the Logistics logo is in the masthead itself. */
 header.hero::before{display:none!important}
+
+/* Divisions dropdown (Phase 1): pure-CSS hover/focus menu in the site nav. */
+.company-nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:16px 12px;border-bottom:1px solid #e5eaf0;background:#fff}
+.company-nav .wrap{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;padding:0}
+.company-nav a{color:#0f2747;font-weight:600;text-decoration:none;padding:6px 10px;border-radius:8px}
+.company-nav a:hover{text-decoration:underline}
+.company-nav .nav-dropdown{position:relative}
+.company-nav .nav-dropdown-toggle{color:#0f2747;font-weight:600;font-family:inherit;font-size:inherit;background:none;border:0;padding:6px 10px;border-radius:8px;cursor:pointer}
+.company-nav .nav-dropdown-toggle:hover{text-decoration:underline}
+.company-nav .nav-dropdown-menu{display:none;position:absolute;left:0;top:100%;min-width:260px;background:#fff;border:1px solid #d9e2ea;border-radius:12px;box-shadow:0 12px 32px rgba(15,39,71,.18);padding:8px;z-index:99}
+.company-nav .nav-dropdown:hover .nav-dropdown-menu,.company-nav .nav-dropdown:focus-within .nav-dropdown-menu{display:block}
+.company-nav .nav-dropdown-menu a{display:block;padding:8px 12px;white-space:nowrap}
+.company-nav .nav-dropdown-menu a:hover{background:#eef3f8;text-decoration:none}
+@media(max-width:700px){.company-nav .wrap{justify-content:flex-start}.company-nav .nav-dropdown{position:static}.company-nav .nav-dropdown-menu{position:static;min-width:0;width:100%;border:0;box-shadow:none;padding:0 0 0 12px}.company-nav .nav-dropdown-menu a{white-space:normal}}
